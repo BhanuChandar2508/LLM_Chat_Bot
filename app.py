@@ -15,9 +15,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ## Load GROQ API KEy:
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
-groq_api_key = os.getenv("GROQ_API_KEY")
-#groq_api_key = ST.secrets["GROQ_API_KEY"]
+#os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+#groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = ST.secrets["GROQ_API_KEY"]
 llm = ChatGroq(groq_api_key=groq_api_key,model="llama-3.1-8b-instant")
 
 prompt = ChatPromptTemplate.from_template(
