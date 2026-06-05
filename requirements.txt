@@ -25,3 +25,6 @@ sentence-transformers
 chromadb
 torch
 torchvision
+duckduckgo_search
+ddgs
+trafilatura
