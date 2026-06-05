@@ -35,7 +35,7 @@ from duckduckgo_search import DDGS
 load_dotenv()
 
 #groq_api_key = os.getenv("GROQ_API_KEY")
-groq_api_key = ST.secrets["GROQ_API_KEY"]
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
